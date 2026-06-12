@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-indigo-50: #fff0f2;
+  --color-indigo-100: #ffd1d6;
+  --color-indigo-200: #ffa8b3;
+  --color-indigo-300: #ff6e80;
+  --color-indigo-400: #fe4058;
+  --color-indigo-500: #fe3c4c;
+  --color-indigo-550: #ef122a;
+  --color-indigo-600: #e2001a;
+  --color-indigo-700: #cc0016;
+  --color-indigo-750: #b50012;
+  --color-indigo-800: #9c000e;
+  --color-indigo-900: #001e33;
+  --color-indigo-950: #001322;
+
+  --color-tm-red: #e2001a;
+  --color-tm-navy: #001e33;
+  --color-tm-teal: #00b1cb;
+  --color-tm-yellow: #ffd100;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --text-xs: 0.875rem; /* 14px */
+  --text-xs--line-height: 1.25rem;
+  --text-sm: 1rem; /* 16px */
+  --text-sm--line-height: 1.5rem;
+}
+
+@layer base {
+  body {
+    background-color: #fafbfc;
+    color: #1e293b;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.96); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out forwards;
+}
+
+.animate-scaleUp {
+  animation: scaleUp 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
