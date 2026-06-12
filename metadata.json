@@ -1,6 +1,0 @@
-{
-  "name": "SPA to PDF Crawler",
-  "description": "A high-performance crawler that traverses single-page applications at configured depths and compiles them into a single high-fidelity, merged PDF document.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
